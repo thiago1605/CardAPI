@@ -7,7 +7,6 @@ export class AppController {
 
   @Get()
   getMainPage(@Query('name') name: string): string {
-    console.log('name', name);
     return this.appService.getCard(name);
   }
 }
