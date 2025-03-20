@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+      .credit-card {
+        width: 320px;
+        height: 200px;
+        background: linear-gradient(135deg, #1a1f71, #3b4cca);
+        border-radius: 15px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        position: relative;
+        font-family: 'Arial', sans-serif;
+      }
+      .credit-card .logo {
+        font-size: 20px;
+        font-weight: bold;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      .credit-card .number {
+        font-size: 20px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 100px;
+        left: 20px;
+      }
+      .credit-card .name {
+        font-size: 18px;
+        position: absolute;
+        bottom: 70px;
+        left: 20px;
+      }
+      .credit-card .expiry {
+        font-size: 16px;
+        position: absolute;
+        bottom: 20px;
+        left: 50px;
+      }
+      .credit-card .expiry-label {
+        font-size: 8px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+      .credit-card .chip {
+        width: 40px;
+        height: 30px;
+        background-color: gold;
+        border-radius: 5px;
+        position: absolute;
+        top: 65px;
+        left: 20px;
+      }
+      .credit-card .visa-logo {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .cards-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-div">
+      <div class="cards-container">
+        <div class="credit-card">
+          <div class="chip"></div>
+          <div class="logo">Visa Platinum</div>
+          <div class="number">1234 5678 9012 3456</div>
+          <div class="name">JOHN DOE</div>
+          <div class="expiry-label">Válido <br />até</div>
+          <div class="expiry">12/24</div>
+          <div class="visa-logo">VISA</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
